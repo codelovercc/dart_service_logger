@@ -1,5 +1,5 @@
 name: dart_service_logger
-description: A starting point for Dart libraries or applications.
+description: Provide implementation of dart_logging_abstraction package using logger and support dart_service_provider extensions.
 version: 1.0.0
 repository: https://github.com/codelovercc/dart_service_logger
 
