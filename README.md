@@ -11,9 +11,6 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
 # dart_service_logger
 
 [![pub package](https://img.shields.io/pub/v/dart_service_logger?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/dart_service_logger)
@@ -28,13 +25,14 @@ using [logger](https://pub.dev/packages/logger).
 
 ## Features
 
-Provide implementation of dart_logging_abstraction package using [logger](https://pub.dev/packages/logger) and
+Provide implementation of dart_logging_abstraction package
+using [logger](https://pub.dev/packages/logger) and
 support [dart_service_provider](https://pub.dev/packages/dart_service_provider) extensions.
 
 ## Getting started
 
 ```dart
-void main(){
+void main() {
   final services = ServiceCollection();
   services.addEnvironment(Environment(name: Environments.development));
   services.addLogging(config: (b) => b.useLogger());
@@ -51,7 +49,7 @@ void main(){
 
 ```dart
 
-void main(){
+void main() {
   final services = ServiceCollection();
   services.addEnvironment(Environment(name: Environments.development));
   // call b.userLogger() to use logger package for logging services.
