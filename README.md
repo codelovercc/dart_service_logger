@@ -20,12 +20,8 @@ and the Flutter guide for
 [![Code size](https://img.shields.io/github/languages/code-size/codelovercc/dart_service_logger?logo=github&logoColor=white)](https://github.com/codelovercc/dart_service_logger)
 [![License](https://img.shields.io/github/license/codelovercc/dart_service_logger?logo=open-source-initiative&logoColor=green)](https://github.com/codelovercc/dart_service_logger/blob/main/LICENSE)
 
-Implementation of [dart_logging_abstraction](https://pub.dev/packages/dart_logging_abstraction)
-using [logger](https://pub.dev/packages/logger).
-
-## Features
-
-Provide implementation of dart_logging_abstraction package
+Provide implementation
+of [dart_logging_abstraction](https://pub.dev/packages/dart_logging_abstraction) package
 using [logger](https://pub.dev/packages/logger) and
 support [dart_service_provider](https://pub.dev/packages/dart_service_provider) extensions.
 
