@@ -1,7 +1,7 @@
 name: dart_service_logger
 description: A starting point for Dart libraries or applications.
 version: 1.0.0
-repository: https://github.com/codelovercc/dart_service_provider
+repository: https://github.com/codelovercc/dart_service_logger
 
 environment:
   sdk: ^3.6.0
