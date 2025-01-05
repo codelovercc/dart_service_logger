@@ -43,6 +43,9 @@ void main() {
 
 ## Usage
 
+You can use it with [dart_service_provider](https://pub.dev/packages/dart_service_provider), or use
+it standalone.
+
 ```dart
 
 void main() {
