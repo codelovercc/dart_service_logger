@@ -8,8 +8,8 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
-  dart_logging_abstraction: ^1.0.6
-  dart_service_provider: ^1.0.7
+  dart_logging_abstraction: ^1.1.0
+  dart_service_provider: ^1.1.0
   logger: ^2.5.0
   # path: ^1.8.0
 
