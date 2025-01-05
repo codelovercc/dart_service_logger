@@ -147,8 +147,8 @@ class CommonLoggerPrinter extends PrettyPrinter {
   };
 
   static final Map<LogLevel, String Function(String msg)> _levelLabelColors = {
-    LogLevel.trace: (msg) => AnsiColors.darkGreyFg.withBg(msg, AnsiColors.blackFg),
-    LogLevel.debug: (msg) => AnsiColors.grayFg.withBg(msg, AnsiColors.blackFg),
+    LogLevel.trace: (msg) => AnsiColors.grayFg.withBg(msg, AnsiColors.blackFg),
+    LogLevel.debug: (msg) => AnsiColors.lightGrayFg.withBg(msg, AnsiColors.blackFg),
     LogLevel.info: (msg) => AnsiColors.blueFg.withBg(msg, AnsiColors.lightGrayFg),
     LogLevel.warn: (msg) => AnsiColors.yellowFg.withBg(msg, AnsiColors.blackFg),
     LogLevel.error: (msg) => AnsiColors.blackFg.withBg(msg, AnsiColors.redFg),
