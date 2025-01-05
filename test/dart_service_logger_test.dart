@@ -10,7 +10,12 @@ void main() {
     setUp(() {
       services = ServiceCollection();
       services.addEnvironment(Environment(name: Environments.development));
-      services.addLogging(config: (b) => b.useLogger());
+      services.addLogging(config: (b) {
+        b.useLogger();
+        b.replaceOptions<LoggerOptions>(
+          (p) => LoggerOptions(minLevel: LogLevel.trace, defaultLoggerName: "Global"),
+        );
+      });
       provider = services.buildServiceProvider();
     });
     tearDown(() {
@@ -36,7 +41,7 @@ void main() {
       expect(globalLoggerTester.printedLevels[LogLevel.warn], isTrue);
       expect(globalLoggerTester.printedLevels[LogLevel.info], isTrue);
       expect(globalLoggerTester.printedLevels[LogLevel.debug], isTrue);
-      expect(globalLoggerTester.printedLevels[LogLevel.trace], isFalse);
+      expect(globalLoggerTester.printedLevels[LogLevel.trace], isTrue);
       expect(globalLoggerTester.printedLevels[LogLevel.none], isFalse);
     });
     test("Logger factory test", () {
@@ -59,7 +64,7 @@ void main() {
       expect(loggerTester.printedLevels[LogLevel.warn], isTrue);
       expect(loggerTester.printedLevels[LogLevel.info], isTrue);
       expect(loggerTester.printedLevels[LogLevel.debug], isTrue);
-      expect(loggerTester.printedLevels[LogLevel.trace], isFalse);
+      expect(loggerTester.printedLevels[LogLevel.trace], isTrue);
       expect(loggerTester.printedLevels[LogLevel.none], isFalse);
     });
   });
