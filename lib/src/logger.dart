@@ -62,7 +62,7 @@ class LogLevelMap {
   Level mapTo(LogLevel l) {
     switch (l) {
       case LogLevel.trace:
-        return Level.all;
+        return Level.trace;
       case LogLevel.debug:
         return Level.debug;
       case LogLevel.info:
