@@ -51,7 +51,7 @@ it standalone.
 void main() {
   final services = ServiceCollection();
   services.addEnvironment(Environment(name: Environments.development));
-  // call b.userLogger() to use logger package for logging services.
+  // call b.useLogger() to use logger package for logging services.
   services.addLogging(config: (b) => b.useLogger());
 }
 
