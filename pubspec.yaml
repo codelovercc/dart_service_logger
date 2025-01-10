@@ -1,6 +1,6 @@
 name: dart_service_logger
 description: Provide implementation of dart_logging_abstraction package using logger and support dart_service_provider extensions.
-version: 1.1.0
+version: 1.1.1
 repository: https://github.com/codelovercc/dart_service_logger
 
 environment:
@@ -9,7 +9,7 @@ environment:
 # Add regular dependencies here.
 dependencies:
   dart_logging_abstraction: ^1.1.0
-  dart_service_provider: ^1.1.0
+  dart_service_provider: ^1.2.0
   logger: ^2.5.0
   # path: ^1.8.0
 

@@ -1,3 +1,7 @@
+## 1.1.1
+
+- Update dart_service_provider to 1.2.0
+
 ## 1.1.0
 
 - Update dart_logging_abstraction to 1.1.0 and dart_service_provider to 1.1.0
